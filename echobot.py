@@ -76,3 +76,15 @@ def updater(token: str):
 
 if __name__ == '__main__':
     updater(TOKEN)
+
+def send_venue(chat_id: int, latitude: float, longitude: float, title: str, address: str):
+    params = {
+    'chat_id': chat_id,
+    'latitude': latitude,
+    'longitude': longitude,
+    'title': title,
+    'address': address }
+    sendvenue_url = f'{BASE_URL}/sendVenue'  
+    response = requests.get(sendvenue_url, params=params)
+    return response
+

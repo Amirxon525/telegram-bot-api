@@ -5,7 +5,7 @@ from settings import TOKEN
 BASE_URL = f'https://api.telegram.org/bot{TOKEN}'
 
 params = {
-    'chat_id': 1258594598,
+    'chat_id': 7767717360,
     'text': 'Nima gap'
 }
 
